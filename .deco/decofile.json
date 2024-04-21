@@ -115,7 +115,8 @@
     "social": []
   },
   "Preview /sections/HelloWorld.tsx": {
-    "__resolveType": "site/sections/HelloWorld.tsx"
+    "__resolveType": "site/sections/HelloWorld.tsx",
+    "value": {}
   },
   "Preview /sections/Hero.tsx": {
     "__resolveType": "site/sections/Hero.tsx",
@@ -488,6 +489,12 @@
       },
       {
         "__resolveType": "site/sections/HelloWorld.tsx"
+      },
+      {
+        "__resolveType": "site/sections/HelloWorld.tsx"
+      },
+      {
+        "__resolveType": "Preview /sections/HelloWorld.tsx"
       }
     ],
     "__resolveType": "website/pages/Page.tsx",
