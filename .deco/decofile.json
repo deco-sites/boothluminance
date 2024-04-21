@@ -114,6 +114,9 @@
     "bottomLinks": [],
     "social": []
   },
+  "Preview /sections/HelloWorld.tsx": {
+    "__resolveType": "site/sections/HelloWorld.tsx"
+  },
   "Preview /sections/Hero.tsx": {
     "__resolveType": "site/sections/Hero.tsx",
     "placement": "left",
