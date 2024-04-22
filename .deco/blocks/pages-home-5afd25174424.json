@@ -1,1 +1,1 @@
-{"name":"Home","path":"/","sections":[],"__resolveType":"website/pages/Page.tsx","seo":{"__resolveType":"website/sections/Seo/SeoV2.tsx","type":"website","themeColor":"#934343"}}
+{"name":"Home","path":"/","sections":[{"__resolveType":"site/sections/NewColorPicker.tsx","color":"#520000"}],"__resolveType":"website/pages/Page.tsx","seo":{"__resolveType":"website/sections/Seo/SeoV2.tsx","type":"website","themeColor":"#934343"}}

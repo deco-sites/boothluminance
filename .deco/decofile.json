@@ -2,9 +2,14 @@
   "BlogPostPage Loader": {
     "__resolveType": "blog/loaders/BlogPostPage.ts"
   },
+  "ColorP": {
+    "__resolveType": "site/sections/ColorP.tsx",
+    "name": "#000000"
+  },
   "Faq - default": {
     "title": "FAQs",
-    "__resolveType": "site/sections/Faq.tsx"
+    "__resolveType": "site/sections/Faq.tsx",
+    "questions": []
   },
   "Footer": {
     "__resolveType": "site/sections/Footer.tsx",
@@ -48,7 +53,8 @@
           "family": "Shrikhand"
         }
       ]
-    }
+    },
+    "mode": "light"
   },
   "Header": {
     "__resolveType": "site/sections/Header.tsx",
@@ -109,13 +115,17 @@
   },
   "Preview /sections/Faq.tsx": {
     "__resolveType": "site/sections/Faq.tsx",
-    "questions": []
+    "questions": [],
+    "cta": {
+      "outline": false
+    }
   },
   "Preview /sections/Footer.tsx": {
     "__resolveType": "site/sections/Footer.tsx",
     "links": [],
     "bottomLinks": [],
-    "social": []
+    "social": [],
+    "subscribe": {}
   },
   "Preview /sections/HelloWorld.tsx": {
     "__resolveType": "site/sections/HelloWorld.tsx",
@@ -135,6 +145,9 @@
       "__resolveType": "blog/loaders/BlogPostItem.ts",
       "slug": "why-we-web"
     }
+  },
+  "Preview /sections/NewColorPicker.tsx": {
+    "__resolveType": "site/sections/NewColorPicker.tsx"
   },
   "Preview /sections/Testimonials.tsx": {
     "__resolveType": "site/sections/Testimonials.tsx"
@@ -304,7 +317,7 @@
           "slug": "customization"
         }
       ],
-      "content": "<h1>Lorem Ipsum Dolor Sit Tiptap</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Nullam faucibus venenatis quam, ut laoreet nisi fermentum eget.</strong> Sed <em>pellentesque</em> egestas odio, <u>quis viverra nunc gravida non</u>. <s>Integer imperdiet ligula et lectus pharetra porta.</s></p><h2>H2: Maecenas Ultrices Ullamcorper Felis</h2><p>Donec <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.deco.cx/\">pulvinar</a> magna nec mi sodales, in volutpat tortor pretium. Phasellus <code>consequat</code> libero eu ligula aliquet, id ornare metus ultrices.</p><h3>H3: Aenean sed diam ipsum</h3><ul><li><p>Lorem ipsum dolor sit amet</p></li><li><p>Vestibulum ante ipsum primis</p></li><li><p>Proin accumsan porttitor felis</p></li></ul><h3>H3: Ordered List Example</h3><p>1. Praesent elementum ante nec nibh rhoncus 2. Mauris vel tincidunt turpis 3. Donec a volutpat diam</p><h2>Image Time!</h2><p><img src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9\"></p><h2>Blockquote with a Twist</h2><blockquote><p>Fusce finibus mauris vitae eros tincidunt, vitae vulputate neque egestas. Sed in ex ac urna volutpat ornare.</p><p></p></blockquote><p>Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>",
+      "content": "<p>Lorem Ipsum Dolor Sit Tiptap</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Nullam faucibus venenatis quam, ut laoreet nisi fermentum eget.</strong> Sed <em>pellentesque</em> egestas odio, <u>quis viverra nunc gravida non</u>. <s>Integer imperdiet ligula et lectus pharetra porta.</s></p><h2>H2: Maecenas Ultrices Ullamcorper Felis</h2><p>Donec <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.deco.cx/\">pulvinar</a> magna nec mi sodales, in volutpat tortor pretium. Phasellus <code>consequat</code> libero eu ligula aliquet, id ornare metus ultrices.</p><h3>H3: Aenean sed diam ipsum</h3><ul><li><p>Lorem ipsum dolor sit amet</p></li><li><p>Vestibulum ante ipsum primis</p></li><li><p>Proin accumsan porttitor felis</p></li></ul><h3>H3: Ordered List Example</h3><p>1. Praesent elementum ante nec nibh rhoncus 2. Mauris vel tincidunt turpis 3. Donec a volutpat diam</p><h2>Image Time!</h2><p><img src=\"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9\"></p><h2>Blockquote with a Twist</h2><blockquote><p>Fusce finibus mauris vitae eros tincidunt, vitae vulputate neque egestas. Sed in ex ac urna volutpat ornare.</p><p></p></blockquote><p>Cras mattis consectetur purus sit amet fermentum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>",
       "slug": "lorem-ipsum",
       "excerpt": "Discover Tiptap's rich formatting options in this whimsical \"lorem ipsum\" inspired blog post.",
       "title": "Harness the Power of Tiptap: A Lorem Ipsum Inspired Demo",
@@ -358,6 +371,14 @@
       "content": "<h1>Why Your Website Needs Blazing-Fast Performance: A Guide Inspired by Deco.cx</h1>\n\n<p>In today's fast-paced digital world, a slow-loading website is often a closed tab. Website performance isn't just a nice-to-have, it's a necessity. This guide, drawing inspiration from deco.cx's approach to performance, will explain why.</p>\n\n<h2>User Experience (UX): Don't Keep Visitors Waiting</h2>\n\n<p>People expect websites to load quickly. Studies show that even a one-second delay can lead to decreased satisfaction and higher bounce rates (people leaving your site). Deco.cx focuses on technologies like server-side rendering (SSR) and edge deployment to minimize load times and keep users engaged.</p>\n\n<h2>Search Engine Optimization (SEO): Speed as a Ranking Factor</h2>\n\n<p>Google and other search engines consider site speed when ranking websites.  A faster website can lead to better visibility in search results. Deco.cx's optimizations aim to give your content the best chance to shine in search engines.</p>\n\n<h2>Conversions: Turning Browsers into Customers</h2>\n\n<p>Slow websites hurt conversions. If your site takes too long to load, people are less likely to stick around to complete a purchase, fill out a form, or subscribe to your newsletter. Deco.cx understands this, and its architecture helps you create a seamless experience that encourages action.</p>\n\n<h2>Beyond the Basics: Deco.cx Performance Concepts</h2>\n\n<p>Here's a quick breakdown of terms important to deco.cx's performance philosophy:</p>\n\n<ul>\n  <li><strong>SSR (Server-Side Rendering):</strong>  Pre-renders pages on the server for fast initial loads.</li>\n  <li><strong>Edge Deployment:</strong>  Distributes your site globally, so users get content from servers closer to them.</li>\n  <li><strong>Static Assets:</strong> Optimizing images, scripts, etc., for smaller file sizes.</li>\n</ul>\n\n<h2>Embrace Speed as a Core Value</h2>\n\n<p>Website performance might seem technical, but its effects are clear. By prioritizing speed, like Deco.cx does, you enhance user experience, boost SEO, and drive better results for your business or project.</p>\n",
       "date": "2024-04-10",
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4763/682eb374-def2-4e85-a45d-b3a7ff8a31a9"
+    }
+  },
+  "collections/blog/posts/66308e44b71d": {
+    "name": "collections/blog/posts/66308e44b71d",
+    "__resolveType": "blog/loaders/Blogpost.ts",
+    "post": {
+      "authors": [],
+      "categories": []
     }
   },
   "collections/blog/posts/cd26860194af": {
@@ -483,10 +504,25 @@
       }
     }
   },
+  "pages-My%20New%20Page-919566": {
+    "name": "My New Page",
+    "path": "/example-path",
+    "sections": [
+      {
+        "__resolveType": "hero"
+      }
+    ],
+    "__resolveType": "website/pages/Page.tsx"
+  },
   "pages-home-5afd25174424": {
     "name": "Home",
     "path": "/",
-    "sections": [],
+    "sections": [
+      {
+        "__resolveType": "site/sections/NewColorPicker.tsx",
+        "color": "#520000"
+      }
+    ],
     "__resolveType": "website/pages/Page.tsx",
     "seo": {
       "__resolveType": "website/sections/Seo/SeoV2.tsx",
@@ -522,9 +558,12 @@
     "firstByteThresholdMS": false,
     "theme": {
       "__resolveType": "Neutral"
+    },
+    "abTesting": {
+      "replaces": [],
+      "includeScriptsToHead": {
+        "includes": []
+      }
     }
-  },
-  "ColorP": {
-    "__resolveType": "site/sections/V2ColorPicker.tsx"
   }
 }
