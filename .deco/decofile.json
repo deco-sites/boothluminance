@@ -104,6 +104,9 @@
       "count": 6
     }
   },
+  "Preview /sections/ColorPicker.tsx": {
+    "__resolveType": "site/sections/ColorPicker.tsx"
+  },
   "Preview /sections/Faq.tsx": {
     "__resolveType": "site/sections/Faq.tsx",
     "questions": []
@@ -483,18 +486,12 @@
   "pages-home-5afd25174424": {
     "name": "Home",
     "path": "/",
-    "sections": [
-      {
-        "__resolveType": "site/sections/Header.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ColorPicker.tsx"
-      }
-    ],
+    "sections": [],
     "__resolveType": "website/pages/Page.tsx",
     "seo": {
       "__resolveType": "website/sections/Seo/SeoV2.tsx",
-      "type": "website"
+      "type": "website",
+      "themeColor": "#934343"
     }
   },
   "site": {
@@ -511,7 +508,8 @@
       "title": "Blog",
       "description": "Improve your page performance with deco.cx",
       "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/5018/6684fd72-ed04-4132-9087-7523fdae8f37",
-      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/5018/8b67110d-de01-4e0a-9fe3-f178b9af56d5"
+      "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/5018/8b67110d-de01-4e0a-9fe3-f178b9af56d5",
+      "noIndexing": false
     },
     "global": [
       {
@@ -526,7 +524,7 @@
       "__resolveType": "Neutral"
     }
   },
-  "Preview /sections/ColorPicker.tsx": {
-    "__resolveType": "site/sections/ColorPicker.tsx"
+  "ColorP": {
+    "__resolveType": "site/sections/V2ColorPicker.tsx"
   }
 }
